@@ -1,11 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.9.2
--- https://www.phpmyadmin.net/
---
--- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 24 mars 2021 à 10:22
--- Version du serveur :  8.0.18
--- Version de PHP :  7.2.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +11,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `test-dev-alternance`
+-- Base de données : `argonautes`
 --
 
 -- --------------------------------------------------------
@@ -28,12 +20,10 @@ SET time_zone = "+00:00";
 -- Structure de la table `argonautes`
 --
 
-DROP TABLE IF EXISTS `argonautes`;
-CREATE TABLE IF NOT EXISTS `argonautes` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `argonautes` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `argonautes`
@@ -43,6 +33,26 @@ INSERT INTO `argonautes` (`id`, `name`) VALUES
 (1, 'Eleftheria'),
 (2, 'Gennadios'),
 (3, 'Lysimachos');
+
+--
+-- Index pour les tables déchargées
+--
+
+--
+-- Index pour la table `argonautes`
+--
+ALTER TABLE `argonautes`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT pour les tables déchargées
+--
+
+--
+-- AUTO_INCREMENT pour la table `argonautes`
+--
+ALTER TABLE `argonautes`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
