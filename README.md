@@ -1,7 +1,7 @@
 # TEST DEV ALTERNANCE
 
 ### Cloner le projet en SSH ou HTTPS    
-git clone git@github.com:madbrain67/test-dev-alternance.git
+git clone git@github.com:madbrain67/test-dev-alternance.git  
 git clone https://github.com/madbrain67/test-dev-alternance.git
 
 ### Installer les dépendances/vendor    
